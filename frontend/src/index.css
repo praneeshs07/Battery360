@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-950: #060913;
+    --navy-900: #0B132B;
+    --navy-850: #111A38;
+    --navy-800: #1C2541;
+    --navy-700: #263359;
+    --navy-600: #3A506B;
+    --cyan-accent: #00F0FF;
+    --cyan-glow: rgba(0, 240, 255, 0.25);
+    --cyan-dark: #0096C7;
+  }
+
+  body {
+    background-color: var(--navy-950);
+    color: #F8FAFC;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+    text-align: left;
+    border-inline: none;
+  }
+}
+
+/* Custom engineering scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #233256;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00B4D8;
+}
+
+/* High-tech glow and gradient utilities */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
+}
+
+.border-navy-card {
+  border: 1px solid rgba(58, 80, 107, 0.45);
+}
+
+.bg-navy-panel {
+  background: linear-gradient(180deg, #111A38 0%, #0B132B 100%);
+}
+
+.bg-navy-card {
+  background: #141E3C;
+}
+
+.bg-navy-darker {
+  background: #080D1A;
+}
+
+.text-cyan-accent {
+  color: #00F0FF;
+}
+
+.border-cyan-accent {
+  border-color: #00F0FF;
+}
+
+.tech-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
